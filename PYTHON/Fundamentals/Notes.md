@@ -29,8 +29,8 @@ Types of comments
 
 There are two types of comments in python
 
-1. Single-Line Comments  - written using #comment
-2. Multi-line Comments - written using "comment"
+1. Single-Line Comments  - written using [#comment]()
+2. Multi-line Comments - written using [&#34;comment&#34;]()
 
 ### VARIABLE
 
@@ -68,6 +68,8 @@ Code to sell all keywords
 `Import keyword #we learn about import fn later
 
 print(keyword.kwlist)`
+
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 
 ### DATA TYPES
 
@@ -111,14 +113,85 @@ a, b are the operands and + is an operator
 
 There are seven operations in python
 
-1. Arithmetic Operators
-2. Assignment and Compound Assignment Operators
-3. Comparison Operators
-4. Logical Operators
-5. Bitwise Operators
-6. Identity Operators
-7. Membership Operators
+1. **Arithmetic Operators**
+   * Unary Plus (+)
+   * Unary Subtract (-)
+   * Multiplication (*)
+   * Division (/) - divide left operator withe the right operator and the result is in float
+   * Power(**) - Left operator raised to the power of right operand
+   * Floor division(//) - division that results in the whole number
+   * Modulus (%) - Remainder of the division of left operand by the right
+
+     Note : Floor division can perform both floating and integral aithmetic. if the arguments are in int type then result in int type, if atleast one argument is float type then result is float type
+2. **Assignment and Compound Assignment Operators**
+   * Assignement Operator
+
+     The equal(=) is used to assign a value to a variable
+   * Compound Assignment Operator
+
+     Combination of Arithmetic and assignment operator is known as compound assignment operator
+
+     Example:
+
+     ```
+     x = 5
+
+     '/='
+
+     x /= 5
+     print(x)
+     ```
+3. **Comparison Operators**
+   * Comparison Operator always return the boolean value(TRUE/FALSE)
+   * (==) is equal to
+   * (>) is greater than
+   * (<) is less than
+   * (!=) is not equal to
+   * (>=) greater than or equal to
+   * (<=) less than or equal to
+4. **Logical Operators**
+   * Logical AND - 'and' is used to get two boolean and check whether they are both TRUE. if either or both are not TRUE, then the resultant expression is FALSE
+   * Logical OR - 'or' is used to get two boolean and check whether any one of the value is TRUE or FALSE. if either both values are either TRUE or FALSE, then the resultant expression is FALSE
+   * Logical NOT - 'Not' is used to invert the boolean, and gets the opposite value
+5. **Bitwise Operators**
+   * Bitwise AND (&)
+   * Bitwise OR (|)
+   * Bitwise NOT (^)  or Bitwise compliment(~)
+   * Bitwsie left shift operator
+   * Bitwsie right shift operator
+6. **Identity Operators**
+   * These operators are used to check if two values are located on the same part of the memory
+   * Two variables that are equal does not implement that they are identical
+     1. 'is' - TRUE if operands are equal
+     2. 'is not' - TRUE if operands are not equal
+7. **Membership Operators**
+   We can use membership operators to check the given object is present in the given collection
+   * 'IN' - TRUE if the given object is present in the specified location
+   * 'NOT IN' - TRUE if the given object is not present in the specified location
 
 **Operator Precedence**
 
-If multiple operators present then which operator will be evaluated first is decided by operator
+If multiple operators present then which operator will be evaluated first is decided by operator precedence
+
+The following list describes the operator precendence in the python
+
+Priority order
+
+1. ()
+2. **
+3. _,~
+4. *,/,%,//
+5. +,-
+6. <<,>>
+7. &
+8. ^
+9. !
+10. ==,!=,>,<,>=,<=
+11. =,+=,-=,*=
+12. is, not is
+13. in, not in
+14. not
+15. and
+16. or
+
+**Type Casting**
