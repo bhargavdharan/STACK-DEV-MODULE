@@ -81,7 +81,7 @@ We can run a single statement or set of statements repeatedly using a loop comma
 
 #### FOR LOOP
 
-Python's for loop is designed to repeatedly execute a code block while iterating through a list, tuple, dictionary, or other iterable objects of Python. 
+Python's for loop is designed to repeatedly execute a code block while iterating through a list, tuple, dictionary, or other iterable objects of Python.
 
 The process of traversing a sequence is known as iteration.
 
@@ -95,7 +95,6 @@ SYNTAX:
 for value in sequence:
     { code  block }
 ```
-
 
 DECISION CONTROL STATEMENTS WITH FOR LOOP
 
@@ -132,7 +131,69 @@ We can give specific start, stop, and step size values in the manner range(start
 
 Since it doesn't create every value it "contains" after we construct it, the range object can be characterized as being "slow." It does provide in, len, and __getitem__ actions, but it is not an iterator.
 
+for more examples regarding for loop refer "CONTROL STATEMENTS" folder
+
 #### WHILE LOOP
+
+The Python while loop iteration of a code block is executed as long as the given condition, i.e., conditional_expression, is true.
+
+If we don't know how many times we'll execute the iteration ahead of time, we can write an indefinite loop.
+
+SYNTAX
+
+```
+while conditional_expression:
+   code block of while
+```
+
+The given condition, i.e., conditional_expression, is evaluated initially in the Python while loop. Then, if the conditional expression gives a boolean value True, the while loop statements are executed. The conditional expression is verified again when the complete code block is executed. This procedure repeatedly occurs until the conditional expression returns the boolean value False.
+
+* The statements of the Python while loop are dictated by indentation.
+* The code block begins when a statement is indented & ends with the very first unindented statement.
+* Any non-zero number in Python is interpreted as boolean True. False is interpreted as None and 0.
+
+EXAMPLE
+
+```
+# Program to print first 5 natural numbers
+
+n = 4
+i = 1
+while i <= n:
+    print(i)
+    i = i + 1
+
+```
+
+**CODE EXPLANATION** : 
+
+We have used **i** and **n** in the boolean expression. During the loop, **n** remains constant and **i** kind of changes with every loop iteration. So, for every iteration, **i** increments and reaches a value where the boolean expression becomes `false` and the control comes out to the loop.
+
+Programmer has to take care that the while loop breaks at some point in the execution. Else, it may iterate indefinitely, which may not be desired all the times.
+
+WHILE LOOP USING LIST
+
+Elements of list are ordered. So, we can access the elements using index. We will make use of this property to traverse through items of list using while loop.
+
+SYNTAX
+
+```
+index = 0
+while index < len(myList):
+    element = myList[index]
+    # statements
+    index = index + 1
+```
+
+CODE EXPLANATION:
+
+* **element** contains value of the this element in the list. For each iteration, next element in the list is loaded into this variable with the changing index.
+* **myList** is the Python List over which we would like to traverse through.
+* **statement(s)** are block are set of statement(s) which execute for each of the element in the list.
+
+WHILE LOOP USING TUPLE
+
+for more examples regarding while loop refer "CONTROL STATEMENTS" folder
 
 ### LOOP CONTROL STATEMENTS
 
