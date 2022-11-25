@@ -4,11 +4,13 @@ let submitBtn = document.getElementById("submit");
 let messageRef = document.getElementById("msg-ref");
 
 let isUsernameValid = () => {
+    // username contains atleast contain more than 3 characters and should begin with alpha character
   const usernameRegex = /^[a-zA-Z][a-zA-Z0-9]{3,32}/gi;
   return usernameRegex.test(usernameRef.value);
 };
 
 let isPasswordValid = () => {
+    // password contains atleast 8 character long
   const pswdRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
   return pswdRegex.test(passwordRef.value);
 };
