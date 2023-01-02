@@ -18,18 +18,18 @@ let isPasswordValid = () => {
 usernameRef.addEventListener("input", () => {
   if (!isUsernameValid()) {
     messageRef.style.visibility = "hidden";
-    usernameRef.style.cssText = "border-color: #fe2e2e:background-color:#ffc2c2";
+    usernameRef.style.cssText = "border-color: #fe2e2e;background-color:#ffc2c2";
   } else {
-    usernameRef.style.cssText = "border-color: #34bd34:background-color:#csffc2";
+    usernameRef.style.cssText = "border-color: #34bd34;background-color:#csffc2";
   }
 });
 
 passwordRef.addEventListener("input", () => {
   if (!isPasswordValid()) {
     messageRef.style.visibility = "hidden";
-    passwordRef.style.cssText = "border-color: #fe2e2e:background-color:#ffc2c2";
+    passwordRef.style.cssText = "border-color: #fe2e2e;background-color:#ffc2c2";
   } else {
-    passwordRef.style.cssText = "border-color: #34bd34:background-color:#csffc2";
+    passwordRef.style.cssText = "border-color: #34bd34;background-color:#csffc2";
   }
 });
 
