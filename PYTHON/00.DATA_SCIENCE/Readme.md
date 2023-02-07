@@ -1,5 +1,63 @@
 # DATA SCIENCE
 
+## WHAT, WHY, WHERE, HOW ?
+
+**What is Data science ?**
+
+Data science is the area of study which involves extracting data from vast amounts of data using various scientific methods, algorithms and processes.
+
+* It helps to dicover hidden patterns from the raw data
+* The term data science has emrged because of the evolution of mathematical statistics, data analysis and big data
+* Data Science is an interdisciplinary field that allows you to extract knowledge from structured or unstructured data.
+* Data science enables you to translate a business problem into a research project and then translate it back into a practical solution.
+
+**Why we use Data science ?**
+
+* Data is the oil for today’s world. With the right tools, technologies, algorithms, we can use data and convert it into a distinct business advantage
+* Data Science can help you to detect fraud using advanced machine learning algorithms
+* It helps you to prevent any significant monetary losses
+* Allows to build intelligence ability in machines
+* You can perform sentiment analysis to gauge customer brand loyalty
+* It enables you to take better and faster decisions
+* It helps you to recommend the right product to the right customer to enhance your business
+
+### **Data science components**
+
+Statistics
+
+Visualization
+
+Machine Learning
+
+Deep Learning
+
+### **Data Science process**
+
+STEP-1: Discovery
+
+STEP-2: Preparation
+
+STEP-3: Model Planning
+
+STEP-4: Model Building
+
+STEP-5: Operationalize
+
+STEP-6: Communicate Results
+
+### **Data Science Roles**
+
+Most prominent Data Scientist job titles are:
+
+* Data Scientist
+* Data Engineer
+* Data Analyst
+* Statistician
+* Data Architect
+* Data Admin
+* Business Analyst
+* Data/Analytics Manager
+
 ## STATISTICS ESSENTIALS FOR DATA SCIENCE
 
 **Statistics is an important branch of mathematics and it deals with the collection and analysis of large quantities of data**
@@ -199,7 +257,6 @@ PREDICTIVE STATISTICS
   Ex:
 * (Demand Prediction) the sales of cars during past few years can be used to predict the demand for spares in the forthcoming years
 * Similarly, (Prediction based on performance) the performance of candidates in selection tests can be used to predict the job performance scores
-
 
 **IMPORTANCE OF STATISTICAL CONCEPTS IN DATA SCIENCE**
 
