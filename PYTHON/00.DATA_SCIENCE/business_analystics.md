@@ -240,7 +240,7 @@ Duplicate refers to the copy of the original
 
 In any data analytics work, there will be always  be cases where get duplicates in different columns - Excel is very handy in order to remove the duplicates in the data
 
-Duplicates can occur in data and cause errors in analytics 
+Duplicates can occur in data and cause errors in analytics
 
 * when there is incorrect submission of user data multiple times
 * When there is a missing validation for duplication in the data set
@@ -265,13 +265,201 @@ For example, let us assume we have choosen cell/group then click "data validatio
   * "List" allows only a list of values in the specific range of cells or written manually in the "source" input box
   * "date" allows only dates and set of rules including a maximum and minimum range to be set
   * "time" allows only time and set of rules including a maximum and minimum range to be set
-* ssa
-
-fsa
 
 ## FORMATTING, CONDITIONAL FORMATTING AND FUNCTIONS
 
+**LEARNING OBJECTIVES**
+
+* Custom Formatting
+* Logical Functions
+* Statistical and Mathematical Functions
+
+For example, Let's say we need to differentiate the sales value from a data set is like above target, below target, met target.As a data set can be huge and complex in differentiating each value manually would consume lot of effort and time Here we can use excel features such as formatting and conditinal formatting which enable us to perform this task easily
+
+Formatting as the name suggests it helps us to format the data, using different techniques, making data easy to read in the required format and analyze them the right formatting technique applied to the worksheets can help users present the data efficiently
+
+Conditional Formatting helps us to visually explore and analyze data, detect critical issues and identify patterns and trends
+
+Conditional Formatting helps to add patterns and trends to the raw information, using diferent colors, icons and formulaes.
+
+At some times, It is necessary to perform mathematical operations and calculations within our dataset.In such cases, Excel provides a large number of logistical statistics and mathematical functions like V-LookUp, H-LoopUp, If, Not, Rank, Quartile and many more that users can perform calculations from ranging basic to complex operations.These in-build functions help and manage data and perform descriptive statistical analysis.
+
+Excel also offers a wide range of important formulaes that perform many common tasks.These formulaes may be as simple as basic operations or it could be a complex operations of in-built excel functions
+
+* Use custom formatting to format data and values
+* Execute logical operations through logical functions
+* Use conditional formatting
+* Classify various statistical functions
+* Find position and value of required fields using lookup and reference functions
+
+**CUSTOM FORMATTING**
+
+The worksheet appears more polished and easy to read if proper formatting technique applied to it.
+
+We can format the cells manually by selecting the font color , fonts, font size, bg color, borders.
+
+We can also format the cells automatically by using numerous predefined table styles or quick styles.
+
+If these basic function do not meet our needs or do not display the data in the required format, create the custom format
+
+For Example, Let say we want to display 1,532,000 as 1.53M or 1-Jan-2023 as 1-Sunday-Jan-2023.Here we can use custom formatting feature of excel.Let's see how we can accomplish in the excel 
+
+| Date      | OrderID | Product   | Salesman | Region | No of customers | Net sales | Profit/Loss |
+| --------- | ------- | --------- | -------- | ------ | --------------- | --------- | ----------- |
+| 01-Jan-23 | 1112    | Product1  | Arjun    | North  | 8               | 7,164     | 844         |
+| 02-Jan-23 | 1113    | Product2  | Arjun    | North  | 12              | 6,528     | 3,376       |
+| 03-Jan-23 | 1114    | Product3  | Arjun    | North  | 24              | 2,520     | 2,280       |
+| 04-Jan-23 | 1115    | Product4  | Arjun    | South  | 15              | 9,660     | 1,737       |
+| 05-Jan-23 | 1116    | Product5  | Arjun    | South  | 3               | 11,550    | 854         |
+| 06-Jan-23 | 1117    | Product6  | Arjun    | South  | 2               | 7,896     | 2,565       |
+| 07-Jan-23 | 1118    | Product7  | Arjun    | South  | 16              | 8,095     | 1,063       |
+| 08-Jan-23 | 1119    | Product8  | Arjun    | South  | 22              | 12,180    | 1,864       |
+| 09-Jan-23 | 1120    | Product9  | Arjun    | South  | 44              | 4,900     | 2,653       |
+| 10-Jan-23 | 1121    | Product10 | Arjun    | South  | 12              | 2,277     | 1,931       |
+| 11-Jan-23 | 1122    | Product11 | Arjun    | West   | 11              | 3,122     | 994         |
+| 12-Jan-23 | 1123    | Product12 | Arjun    | West   | 6               | 8,046     | 4,092       |
+| 13-Jan-23 | 1124    | Product13 | Arjun    | West   | 1               | 4,230     | 1,900       |
+| 14-Jan-23 | 1125    | Product14 | Arjun    | West   | 4               | 11,250    | 882         |
+
+Here in the above worksheet, we have a column name Net sales. Suppose if we want to display the values of net sales in terms of thousands.For example,Display 11,250 as 11.25k Now select entire columns in the net sales - under the home tab click the dropdown present in the number panel and slect the option more number formats. From the format cells dialog box appears from the category list select the type as custom and then in the type text box with #,##0.00,"k" - #,Digit holder with thousand comma separation and , after decimal divide value by 1000 and 0 after decimal indicates number values after decimal places
+
+| Date      | OrderID | Product   | Salesman | Region | No of customers | Net sales | Profit/Loss |
+| --------- | ------- | --------- | -------- | ------ | --------------- | --------- | ----------- |
+| 01-Jan-23 | 1112    | Product1  | Arjun    | North  | 8               | 7.16K     | 844         |
+| 02-Jan-23 | 1113    | Product2  | Arjun    | North  | 12              | 6.53K     | 3,376       |
+| 03-Jan-23 | 1114    | Product3  | Arjun    | North  | 24              | 2.52K     | 2,280       |
+| 04-Jan-23 | 1115    | Product4  | Arjun    | South  | 15              | 9.66K     | 1,737       |
+| 05-Jan-23 | 1116    | Product5  | Arjun    | South  | 3               | 11.55K    | 854         |
+| 06-Jan-23 | 1117    | Product6  | Arjun    | South  | 2               | 7.90K     | 2,565       |
+| 07-Jan-23 | 1118    | Product7  | Arjun    | South  | 16              | 8.10K     | 1,063       |
+| 08-Jan-23 | 1119    | Product8  | Arjun    | South  | 22              | 12.18K    | 1,864       |
+| 09-Jan-23 | 1120    | Product9  | Arjun    | South  | 44              | 4.90K     | 2,653       |
+| 10-Jan-23 | 1121    | Product10 | Arjun    | South  | 12              | 2.28K     | 1,931       |
+| 11-Jan-23 | 1122    | Product11 | Arjun    | West   | 11              | 3.12K     | 994         |
+| 12-Jan-23 | 1123    | Product12 | Arjun    | West   | 6               | 8.05K     | 4,092       |
+| 13-Jan-23 | 1124    | Product13 | Arjun    | West   | 1               | 4.23K     | 1,900       |
+| 14-Jan-23 | 1125    | Product14 | Arjun    | West   | 4               | 11.25K    | 882         |
+
+Now Let us consider another example data formatting, In the column dates we have a date value written as 1 jan 2023 now we want to display it as 1 sunday jan 2023
+
+First select the column containing dates and then under the home tab select the dropdown from numbers panel and then select the option more format options Then format cel dialog box appears from the category list select the type as custom - In the type text box enter dd-dddd-mmmm-yy 
+
+| Date                | OrderID | Product   | Salesman | Region | No of customers | Net sales | Profit/Loss |
+| ------------------- | ------- | --------- | -------- | ------ | --------------- | --------- | ----------- |
+| 01-Sunday-Jan-23    | 1112    | Product1  | Arjun    | North  | 8               | 7,164     | 844         |
+| 02-Monday-Jan-23    | 1113    | Product2  | Arjun    | North  | 12              | 6,528     | 3,376       |
+| 03-Tuesday-Jan-23   | 1114    | Product3  | Arjun    | North  | 24              | 2,520     | 2,280       |
+| 04-Wednesday-Jan-23 | 1115    | Product4  | Arjun    | South  | 15              | 9,660     | 1,737       |
+| 05-Thursday-Jan-23  | 1116    | Product5  | Arjun    | South  | 3               | 11,550    | 854         |
+| 06-Friday-Jan-23    | 1117    | Product6  | Arjun    | South  | 2               | 7,896     | 2,565       |
+| 07-Saturday-Jan-23  | 1118    | Product7  | Arjun    | South  | 16              | 8,095     | 1,063       |
+| 08-Sunday-Jan-23    | 1119    | Product8  | Arjun    | South  | 22              | 12,180    | 1,864       |
+| 09-Monday-Jan-23    | 1120    | Product9  | Arjun    | South  | 44              | 4,900     | 2,653       |
+| 10-Tuesday-Jan-23   | 1121    | Product10 | Arjun    | South  | 12              | 2,277     | 1,931       |
+| 11-Wednesday-Jan-23 | 1122    | Product11 | Arjun    | West   | 11              | 3,122     | 994         |
+| 12-Thursday-Jan-23  | 1123    | Product12 | Arjun    | West   | 6               | 8,046     | 4,092       |
+| 13-Friday-Jan-23    | 1124    | Product13 | Arjun    | West   | 1               | 4,230     | 1,900       |
+| 14-Saturday-Jan-23  | 1125    | Product14 | Arjun    | West   | 4               | 11,250    | 882         |
+
+Thus custom formatting helps us changing the appearance of cell value according to our needs
+
+
+**CONDITIONAL FORMATTING**
+
+A worksheet may contain thousand of rows of data by simply examing the raw information, it would be difficult to see patterns and trends.
+
+Conditional formatting helps us to visulaize the data that makes worksheets easier to understand and also it quickly highlights important information in the spreadsheet by using colors , fonts, bg colors, data bars. it changes the appeaance of one or more cells when the cell value meeting criteria to do this we need to create a conditional formatting rule.
+
+For example, Conditional formatting rule can be , if value is greater thatn 5,000 color the cell yellow by applying this rule we are able to see which cells contains values greater than $ 5000
+
+consider the below sales table, which depicts the  amount of sales done by each salesman Here we want to highlight the duplicate order id's - First select the order id column then click on the home tab under the styles panel select the optional conditional formatting from the dropdown menu hover the mouse over the highlight cell rules and duplicate values then duplicate select dialog box appears - select the formatting style which we want for our need
+
+
+
 ## ANALYZING DATA WITH PIVOT TABLES
+
+Data Analysis : Problem
+
+Being able to analyze all the data in our worksheet can help us make better decisions but sometimes its hard to know where to start, especially when we have a lot of data. Suppose if we want to determine net sales in the previous table, analyzing this manually could be difficult as region appears in the multiple rows and we need total of them individually and we can also determine net sales by using excel's built-in formulaes, a task that could become quite time consuming.Here Pivot table, comes into the picture and extracts key information from this large detailed data-set.
+
+A Pivot table is an incredibly powerful tool that makes it is easy to summerize, analyze, explore and present the data.
+
+A Pivot table makes life easy, giving us insights into the data and allowing us to experiment with it, to discover new trends and patterns.It instantly calculates and summerize the data in a way that both easy to read and manipulate.
+
+One can easily design a pivot table by simply dragging and dropping relevant information into the appropriate boxes
+
+LEARNING OBJECTIVES
+
+* Create and use pivot tables
+* Group different data types
+* Create and evaluate summarized data types
+* illustrate the use of calculated field and calculated item
+* Design a interactive pivot table using a slicer
+
+INTRODUCTION TO PIVOT TABLES
+
+Pivot tables are very useful and powerful features of Excel
+
+It is used to summarize, analyze, explore and present the data in tabular form
+
+For example, Let us assume below data to determine the net sales done by the salesman in each region
+
+| Date      | OrderID | Product   | Salesman | Region | No of customers | Net sales | Profit/Loss |
+| --------- | ------- | --------- | -------- | ------ | --------------- | --------- | ----------- |
+| 01-Jan-23 | 1112    | Product1  | Arjun    | North  | 8               | 7,164     | 844         |
+| 02-Jan-23 | 1113    | Product2  | Arjun    | North  | 12              | 6,528     | 3,376       |
+| 03-Jan-23 | 1114    | Product3  | Arjun    | North  | 24              | 2,520     | 2,280       |
+| 04-Jan-23 | 1115    | Product4  | Arjun    | South  | 15              | 9,660     | 1,737       |
+| 05-Jan-23 | 1116    | Product5  | Arjun    | South  | 3               | 11,550    | 854         |
+| 06-Jan-23 | 1117    | Product6  | Arjun    | South  | 2               | 7,896     | 2,565       |
+| 07-Jan-23 | 1118    | Product7  | Arjun    | South  | 16              | 8,095     | 1,063       |
+| 08-Jan-23 | 1119    | Product8  | Arjun    | South  | 22              | 12,180    | 1,864       |
+| 09-Jan-23 | 1120    | Product9  | Arjun    | South  | 44              | 4,900     | 2,653       |
+| 10-Jan-23 | 1121    | Product10 | Arjun    | South  | 12              | 2,277     | 1,931       |
+| 11-Jan-23 | 1122    | Product11 | Arjun    | West   | 11              | 3,122     | 994         |
+| 12-Jan-23 | 1123    | Product12 | Arjun    | West   | 6               | 8,046     | 4,092       |
+| 13-Jan-23 | 1124    | Product13 | Arjun    | West   | 1               | 4,230     | 1,900       |
+| 14-Jan-23 | 1125    | Product14 | Arjun    | West   | 4               | 11,250    | 882         |
+
+Analyzing this manually would be time consuming and diffcult as the data for each region appears on the multiple rows and we need a total of all different orders individually here, pivot table comes into play and becomes a life saver
+
+This feature allows us to calculate and summarize the data instantly, which is both easy to read and manipulate. Once we've created a pivot table, we can quickly pivot or reorganized the data to answer different questions
+
+CREATING THE PIVOT TABLE
+
+To create a pivot table in excel, select the cells containing the data we want to use.
+
+Then click the insert tab and select the pivot table after dialog box appears with the option to create pivot table.
+
+Under table range,reference box excel automatically selects the data range that we want use to create pivot table.There is also an option asking for the placement of the pivot table.This feature allows us to decide whether we would like to place the pivot table in a new worksheet or at a particular locations in the worksheet.
+
+After selecting our required option, Excel creates a blank pivot table and a pivot table fields on the box of right side of the worksheet.The pivot table field list box contains two sections, namely field section and area section.
+
+* Field section - Allows to pick the fields required to create a pivot table
+* Area section - Allows to arrange the fields that way we want it to be displayed in the pivot table
+
+Now let's create a pivot table to determine the region wise, net sales within the pivot table, field list tasks pane first drag the salesman field into area marked rows then drag the region field into area marked columns.Lastly, drag the net sales field into the area marked as calculated values
+
+Here we see pivot table is populated with the net sales done by the salesman in each region.
+
+| Sum of Net sales | Column Labels |       |       |             |
+| ---------------- | ------------- | ----- | ----- | ----------- |
+| Row Labels       | North         | South | West  | Grand Total |
+| Arjun            | 16212         | 56558 | 26648 | 99418       |
+| Grand Total      | 16212         | 56558 | 26648 | 99418       |
+
+Like any normal spreadsheet, any type of number formatting can be applied.Now, if we would like to see the total number of sales instead of the net sales then we should change the sum of sales function to the count of total number of sales to change this function Right-Click the value field and click the value field setting with summarize and in summarize values field by dialog box and select the count function and click OK.By using this function we can easily determine total number of saled done by each person
+
+| Count of Net sales | Column Labels |       |      |             |
+| ------------------ | ------------- | ----- | ---- | ----------- |
+| Row Labels         | North         | South | West | Grand Total |
+| Arjun              | 3             | 7     | 4    | 14          |
+| Grand Total        | 3             | 7     | 4    | 14          |
+
+GROUPING IN PIVOT TABLE
+
+It is often useful to group the fields in the pivot table by the header values.
+
 
 ## BUSINEES ANALYTICS WITH EXCEL
 
